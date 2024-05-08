@@ -1,12 +1,12 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route } from "react-router-dom";
 
-import { Navigation, NavigationLink } from './Navigation';
-import { Page } from './Page';
+import { Navigation, NavigationLink } from "./Navigation";
+import { Page } from "./Page";
 
 function Application() {
   return (
     <main className="h-screen">
-      <h1 className="text-3xl font-bold bg-yellow-300 p-4 border-b-2 border-yellow-400">
+      <h1 className="text-3xl font-bold bg--300 p-4 border-b-2 border-cyan-400">
         Incredibly Important Thoughts
       </h1>
       <div className="grid grid-cols-12 grid-rows-1 gap-4 h-full">
@@ -26,10 +26,7 @@ function Application() {
               path="/notes/beatles"
               element={
                 <div>
-                  <img
-                    src="/beatles.jpg"
-                    alt="Possibly the Beatles, possibly"
-                  />
+                  <img src="/beatles.jpg" alt="Possibly the Beatles, possibly" />
                 </div>
               }
             />
